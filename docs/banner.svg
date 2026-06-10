@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', monospace">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fd0f5"/>
+      <stop offset="1" stop-color="#cfe9fb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#sky)"/>
+
+  <!-- Cubos voxel isométricos: top claro, lado esquerdo médio, lado direito escuro -->
+  <!-- tile = 56 de largura por face; cada cubo é um grupo transladado -->
+  <g>
+    <!-- Bloco de grama 1 -->
+    <g transform="translate(150,150)">
+      <polygon points="0,0 56,28 0,56 -56,28" fill="#6cc24e"/>
+      <polygon points="-56,28 0,56 0,118 -56,90" fill="#6b4830"/>
+      <polygon points="56,28 0,56 0,118 56,90" fill="#5a3d28"/>
+      <polygon points="-56,28 0,56 0,72 -56,44" fill="#4c9434"/>
+      <polygon points="56,28 0,56 0,72 56,44" fill="#418029"/>
+    </g>
+    <!-- Bloco de grama 2 (atrás à direita) -->
+    <g transform="translate(262,86)">
+      <polygon points="0,0 56,28 0,56 -56,28" fill="#6cc24e"/>
+      <polygon points="-56,28 0,56 0,118 -56,90" fill="#6b4830"/>
+      <polygon points="56,28 0,56 0,118 56,90" fill="#5a3d28"/>
+      <polygon points="-56,28 0,56 0,72 -56,44" fill="#4c9434"/>
+      <polygon points="56,28 0,56 0,72 56,44" fill="#418029"/>
+    </g>
+    <!-- Bloco de pedra -->
+    <g transform="translate(206,214)">
+      <polygon points="0,0 56,28 0,56 -56,28" fill="#9c9c9c"/>
+      <polygon points="-56,28 0,56 0,118 -56,90" fill="#7a7a7a"/>
+      <polygon points="56,28 0,56 0,118 56,90" fill="#6a6a6a"/>
+    </g>
+    <!-- Bloco de água -->
+    <g transform="translate(94,214)" opacity="0.92">
+      <polygon points="0,0 56,28 0,56 -56,28" fill="#4a80ea"/>
+      <polygon points="-56,28 0,56 0,118 -56,90" fill="#3565c8"/>
+      <polygon points="56,28 0,56 0,118 56,90" fill="#2b54a8"/>
+    </g>
+    <!-- Tronco de árvore + copa -->
+    <g transform="translate(318,150)">
+      <polygon points="0,0 56,28 0,56 -56,28" fill="#48902f"/>
+      <polygon points="-56,28 0,56 0,118 -56,90" fill="#356b22"/>
+      <polygon points="56,28 0,56 0,118 56,90" fill="#2a5a1c"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="470" y="150" font-size="78" font-weight="bold" letter-spacing="6"
+        fill="#7ed06a" stroke="#2a4d1f" stroke-width="3" paint-order="stroke">VOXELANIA</text>
+  <text x="472" y="196" font-size="22" fill="#3a5070" letter-spacing="2">
+    Sandbox voxel 3D no navegador — Three.js + Vite
+  </text>
+  <text x="472" y="232" font-size="16" fill="#5a6f92" letter-spacing="1">
+    Mundo procedural · assets 100% gerados por código
+  </text>
+</svg>

@@ -1,8 +1,15 @@
 # Voxelania
 
+![Voxelania](docs/banner.svg)
+
 Jogo sandbox de blocos (voxel) 3D que roda no navegador — engenharia no estilo
 "Minecraft-like", com **conteúdo 100% original**: todas as texturas são geradas
 proceduralmente em canvas, sem nenhum asset da Mojang/Microsoft.
+
+### 🎮 Jogue agora: **https://codecapelo.github.io/Mini_craft/**
+
+> Publicado automaticamente pelo GitHub Actions a cada push na branch `main`.
+> Abra numa aba normal do navegador (o pointer lock precisa de uma aba real).
 
 ## Como rodar
 
