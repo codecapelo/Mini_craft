@@ -6,7 +6,12 @@ Jogo sandbox de blocos (voxel) 3D que roda no navegador — engenharia no estilo
 "Minecraft-like", com **conteúdo 100% original**: todas as texturas são geradas
 proceduralmente em canvas, sem nenhum asset da Mojang/Microsoft.
 
-### 🎮 Deploy no Netlify
+### 🎮 Jogue agora: **https://voxelania.netlify.app/**
+
+> Abra numa aba normal do navegador (o pointer lock precisa de uma aba real) e
+> clique em **"▶ Clique para jogar"**.
+
+### Deploy no Netlify
 
 O repositório já vem com um [`netlify.toml`](netlify.toml), então o Netlify
 detecta tudo sozinho ao conectar o repo. Em **Add new site → Import from Git**,
@@ -18,9 +23,8 @@ as configurações já vêm preenchidas:
 | Publish directory    | `dist`          |
 | Node version         | `20`            |
 
-Cada push na branch `main` dispara um novo deploy. O Netlify gera a URL pública
-(algo como `https://seu-site.netlify.app`) — abra numa aba normal do navegador
-(o pointer lock precisa de uma aba real).
+Cada push na branch `main` dispara um novo deploy, publicado em
+**https://voxelania.netlify.app/**.
 
 ## Como rodar
 
