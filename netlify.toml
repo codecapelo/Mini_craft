@@ -1,0 +1,10 @@
+# Configuração de deploy do Netlify.
+# Com este arquivo na raiz, ao conectar o repositório o Netlify já preenche
+# o comando de build e a pasta de publicação automaticamente.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"

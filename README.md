@@ -6,10 +6,21 @@ Jogo sandbox de blocos (voxel) 3D que roda no navegador — engenharia no estilo
 "Minecraft-like", com **conteúdo 100% original**: todas as texturas são geradas
 proceduralmente em canvas, sem nenhum asset da Mojang/Microsoft.
 
-### 🎮 Jogue agora: **https://codecapelo.github.io/Mini_craft/**
+### 🎮 Deploy no Netlify
 
-> Publicado automaticamente pelo GitHub Actions a cada push na branch `main`.
-> Abra numa aba normal do navegador (o pointer lock precisa de uma aba real).
+O repositório já vem com um [`netlify.toml`](netlify.toml), então o Netlify
+detecta tudo sozinho ao conectar o repo. Em **Add new site → Import from Git**,
+as configurações já vêm preenchidas:
+
+| Configuração         | Valor           |
+| -------------------- | --------------- |
+| Build command        | `npm run build` |
+| Publish directory    | `dist`          |
+| Node version         | `20`            |
+
+Cada push na branch `main` dispara um novo deploy. O Netlify gera a URL pública
+(algo como `https://seu-site.netlify.app`) — abra numa aba normal do navegador
+(o pointer lock precisa de uma aba real).
 
 ## Como rodar
 
